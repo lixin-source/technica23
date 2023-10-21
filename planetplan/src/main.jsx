@@ -3,7 +3,7 @@ import App from './App.jsx'
 import NavBar from './routes/NavBar';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import PrivateRoute from "./pages/PrivateRoute.page";
+import PrivateRoute from "./pages/PrivateRoute";
 import { UserProvider } from "./pages/User.Context";
 // import UserProfile from './routes/UserProfile'
 
