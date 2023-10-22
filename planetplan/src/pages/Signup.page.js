@@ -1,7 +1,11 @@
 import { Button, TextField } from "@mui/material";
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+<<<<<<< HEAD:planetplan/src/pages/Signup.page.js
 import { UserContext } from "../contexts/user.context";
+=======
+import { UserContext } from "./User.Context.jxs";
+>>>>>>> dd0e7bd7c4bea2b2ab55e6e4e1ae270354238bec:planetplan/src/pages/Signup.jsx
  
 const Signup = () => {
  const navigate = useNavigate();

@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
+<<<<<<< HEAD:planetplan/src/pages/PrivateRoute.page.js
 import { UserContext } from "../contexts/user.context";
+=======
+import { UserContext } from "./User.Context.jxs";
+>>>>>>> dd0e7bd7c4bea2b2ab55e6e4e1ae270354238bec:planetplan/src/pages/PrivateRoute.page.jxs
  
 const PrivateRoute = () => {
  

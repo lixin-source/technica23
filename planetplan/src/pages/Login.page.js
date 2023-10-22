@@ -1,7 +1,11 @@
 import { Button, TextField } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+<<<<<<< HEAD:planetplan/src/pages/Login.page.js
 import { UserContext } from "../contexts/user.context";
+=======
+import { UserContext } from "./User.Context.jxs";
+>>>>>>> dd0e7bd7c4bea2b2ab55e6e4e1ae270354238bec:planetplan/src/pages/Login.jsx
  
 const Login = () => {
  const navigate = useNavigate();
@@ -96,7 +100,7 @@ const Login = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
      Login
    </Button>
-   <p>Don't have an account? <Link to="/signup">Signup</Link></p>
+   <p>Don&apost have an account? <Link to="/signup">Signup</Link></p>
  </form>
 }
  

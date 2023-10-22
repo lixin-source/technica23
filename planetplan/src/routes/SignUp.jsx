@@ -1,12 +1,12 @@
-// import SignUp from "../pages/SignUp";
+import SignUpRoute from "../pages/Signup";
 
-// const SignUp = () => {
-//     return (
-//         <div>
+const SignUp = () => {
+    return (
+        <div>
       
-//             <SignUp />
-//       </div>
-//     );
-//   };
+            <SignUpRoute />
+      </div>
+    );
+  };
   
-//   export default SignUp;
+  export default SignUp;
