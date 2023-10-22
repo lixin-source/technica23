@@ -20,27 +20,27 @@ const Tasks =[
     },
     {
         "id":4,
-        "title":"",
-        "description":"",
-        "image_task":"",
+        "title":"Do Yoga for 15 min",
+        "description":"Beginners: Downward Facing Dog, Mountain Pose, Yin Yoga, Cat Cow, Uttanasana",
+        "image_task":"https://previews.123rf.com/images/kittikornphongok/kittikornphongok1709/kittikornphongok170900282/87254273-colorful-watercolor-woman-silhouette-of-lotus-yoga-pose-digital-art-paintiing.jpg",
     },
     {
         "id":5,
-        "title":"",
-        "description":"",
-        "image_task":"",
+        "title":"Study a Topic That has always intimidated you for 2 hours",
+        "description":"it can be anything from learning a new language, learn about a career field you have been wanting to do, learn to swim if you have a fear of swimming, etc.",
+        "image_task":"https://cdn-icons-png.flaticon.com/512/2367/2367133.png",
     },
     {
         "id":6,
-        "title":"",
-        "description":"",
-        "image_task":"",
+        "title":"Play a Board Game with a friend/family!",
+        "description":"This can include chess, trivia game, card games etc",
+        "image_task":"https://thumbs.dreamstime.com/b/chess-game-chess-king-queen-pieces-chess-board-aquarelle-watercolor-illustration-generative-ai-chess-game-chess-king-276935399.jpg",
     },
     {
         "id":7,
-        "title":"",
-        "description":"",
-        "image_task":"",
+        "title":"Recycle!",
+        "description":"Tips: Don’t recycle anything smaller than a credit card. That includes straws, bottle caps, coffee pods, plastic cutlery, paperclips etc.",
+        "image_task":"https://1000logos.net/wp-content/uploads/2017/06/Logo-Recycle.jpg",
     }
    
 ]
