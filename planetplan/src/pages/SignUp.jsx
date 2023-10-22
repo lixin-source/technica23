@@ -2,22 +2,26 @@ import React, { useState } from 'react';
 // import { createClient } from '@supabase/supabase-js';
 import { supabase } from '../client';
 
+
+
 // const supabase = createClient(supabaseUrl, supabaseKey);
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [fullname, setFullname] = useState('');
 
   const handleSignUp = async () => {
     try {
-      // Create a new user in the custom "users" table
+      
       const { data: user, error } = await supabase
         .from('users')
         .insert([
           {
             email,
-            password, // You should hash the password before saving it
-            // Add other user-related columns as needed
+            password,
+            fullname 
+            
           },
         ]);
 
@@ -35,6 +39,12 @@ const SignUp = () => {
   return (
     <div>
       <h2>Sign Up</h2>
+      <input
+        type="Fullname"
+        placeholder="Full Name"
+        value={fullname}
+        onChange={(e) => setFullname(e.target.value)}
+      />
       <input
         type="email"
         placeholder="Email"
