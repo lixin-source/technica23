@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { supabase } from './supabase'; // Import your Supabase client
+import { useEffect, useState } from 'react';
+import { supabase } from '../client'; // Import your Supabase client
 
 function UncompletedTasks() {
   const [tasks, setTasks] = useState([]);
