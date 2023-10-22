@@ -1,4 +1,4 @@
-import SignUpRoute from "../pages/Signup";
+import SignUpRoute from "../pages/SignUp";
 
 const SignUp = () => {
     return (
