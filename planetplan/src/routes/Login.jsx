@@ -1,12 +1,12 @@
-// import Login from "../pages/Login";
+import LoginRoute from "../pages/Login";
 
-// const Login = () => {
-//     return (
-//         <div>
+const Login = () => {
+    return (
+        <div>
       
-//             <Login />
-//       </div>
-//     );
-//   };
+            <LoginRoute />
+      </div>
+    );
+  };
   
-//   export default Login;
+  export default Login;
