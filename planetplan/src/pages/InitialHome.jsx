@@ -8,9 +8,11 @@ function InitialHome() {
   return (
     <div>
           <Welcome />
-        <Link to={`/login`}>Login</Link>
-        <Link to={`/signup`}>Sign Up</Link>
-        <Link to={`/addtask`}>AddTask</Link>
+          <div className="d-flex justify-content-around">
+            <Link to={`/login`}>Login</Link>
+            <Link to={`/signup`}>Sign Up</Link>
+            <Link to={`/addtask`}>AddTask</Link>
+          </div>
     </div>
   )
 }
