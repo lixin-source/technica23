@@ -1,12 +1,12 @@
-// import TaskDetails from "../pages/TaskDetails";
+import Task from "../pages/TaskDetail";
 
-// const TaskDetails = () => {
-//     return (
-//         <div>
+const TaskDetails = () => {
+    return (
+        <div>
       
-//             <TaskDetails />
-//       </div>
-//     );
-//   };
+            <Task />
+      </div>
+    );
+  };
   
-//   export default TaskDetails;
+  export default TaskDetails;

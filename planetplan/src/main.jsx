@@ -1,10 +1,11 @@
 // Pages
 import App from './App.jsx'
 import NavBar from './routes/NavBar';
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import PrivateRoute from "./pages/PrivateRoute";
-import { UserProvider } from "./contexts/user";
+import Login from "./routes/Login";
+import Signup from "./routes/SignUp";
+import PrivateRoute from "./pages/PrivateRoute.page.jxs";
+import { UserProvider } from "./pages/User.Context.jxs";
+import TaskDetails from "./routes/TaskDetails.jsx"
 // import UserProfile from './routes/UserProfile'
 
 import './index.css'
@@ -27,6 +28,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route exact path="/signup" element={<Signup />} />
         {/* Log In page  */}
         <Route exact path="/login" element={<Login />} />
+        {/* Task Detail page */}
+        <Route index={false} path='/taskDetail/:id' element={<TaskDetails/>}/>
         <Route element={<PrivateRoute />}>
 
         </Route>

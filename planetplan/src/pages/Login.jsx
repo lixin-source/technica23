@@ -2,7 +2,7 @@
 import { Button, TextField } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { UserContext } from "./User.Context";
+import { UserContext } from "./User.Context.jxs";
  
 const Login = () => {
  const navigate = useNavigate();
@@ -97,7 +97,7 @@ const Login = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
      Login
    </Button>
-   <p>Don't have an account? <Link to="/signup">Signup</Link></p>
+   <p>Don&apost have an account? <Link to="/signup">Signup</Link></p>
  </form>
 }
  
