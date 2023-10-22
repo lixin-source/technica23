@@ -1,6 +1,6 @@
 // Pages
 import App from './App.jsx'
-import NavBar from './components/NavBar.jsx';
+//import NavBar from './components/NavBar.jsx';
 import Login from "./routes/Login";
 import Signup from "./routes/SignUp";
 import TaskDetails from "./routes/TaskDetails.jsx"
