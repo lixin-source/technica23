@@ -18,28 +18,28 @@ const tasks = [
     image_task: "https://thumbs.dreamstime.com/b/stunning-stock-photo-features-delicate-watercolor-daisy-painted-onto-pages-open-book-soft-pink-white-hues-272275726.jpg"
   },
   {
-    id: 4,
-    title: "",
-    description: "",
-    image_task: ""
-  },
-  {
-    id: 5,
-    title: "",
-    description: "",
-    image_task: ""
-  },
-  {
-    id: 6,
-    title: "",
-    description: "",
-    image_task: ""
-  },
-  {
-    id: 7,
-    title: "",
-    description: "",
-    image_task: ""
-  }
+    "id":5,
+    "title":"Study a Topic That has always intimidated you for 2 hours",
+    "description":"it can be anything from learning a new language, learn about a career field you have been wanting to do, learn to swim if you have a fear of swimming, etc.",
+    "image_task":"https://cdn-icons-png.flaticon.com/512/2367/2367133.png",
+    "is_complete":false,
+
+},
+{
+    "id":6,
+    "title":"Play a Board Game with a friend/family!",
+    "description":"This can include chess, trivia game, card games etc",
+    "image_task":"https://thumbs.dreamstime.com/b/chess-game-chess-king-queen-pieces-chess-board-aquarelle-watercolor-illustration-generative-ai-chess-game-chess-king-276935399.jpg",
+    "is_complete":false,
+
+},
+{
+    "id":7,
+    "title":"Recycle!",
+    "description":"Tips: Don’t recycle anything smaller than a credit card. That includes straws, bottle caps, coffee pods, plastic cutlery, paperclips etc.",
+    "image_task":"https://1000logos.net/wp-content/uploads/2017/06/Logo-Recycle.jpg",
+    "is_complete":false,
+
+}
 ];
 export default tasks;
