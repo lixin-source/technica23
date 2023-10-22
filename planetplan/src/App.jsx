@@ -3,7 +3,7 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 
 import './App.css'
-import "bootswatch/dist/[theme]/bootstrap.min.css";
+import "bootswatch/dist/quartz/bootstrap.min.css";
 
 function App() {
 
