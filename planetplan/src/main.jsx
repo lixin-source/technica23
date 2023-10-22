@@ -4,6 +4,7 @@ import NavBar from './routes/NavBar';
 import Login from "./routes/Login";
 import Signup from "./routes/SignUp";
 import TaskDetails from "./routes/TaskDetails.jsx"
+import InitialHome from './routes/InitialHome.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import UserProfile from './routes/UserProfile'
 
@@ -21,7 +22,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         {/* NavBar */}
         <Route path="/" element={<NavBar />}/>
-        {/* Home Page */}
+        {/* Initial Home Page before User Login */}
+        <Route index={true} path="inithome" element={<InitialHome />} />
+        {/* Home pg after login */}
         <Route index={true} path="home" element={<App />} />
         {/* Sign Up Page */}
         <Route exact path="/signup" element={<Signup />} />
