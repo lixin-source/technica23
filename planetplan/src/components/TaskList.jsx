@@ -5,7 +5,7 @@ function TaskList() {
     const [fullTasks, setFullTasks] = useState([]);
     
 useEffect(() => {
-    async function fetchAllTasks() {
+  async function fetchAllTasks() {
         const { data } = await axios.get("/data/Tasks");
         setFullTasks(data);
         }

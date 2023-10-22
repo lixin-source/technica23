@@ -4,30 +4,29 @@ import { supabase } from '../client';
 
 // const supabase = createClient(supabaseUrl, supabaseKey);
 
-const Login = () => {
+const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = async () => {
+  const handleSignUp = async () => {
     try {
-      const { data, error } = await supabase
-        .from('users') // Replace with your actual user table name
-        .select()
-        .eq('email', email)
-        .eq('password', password)
-        .single();
+      // Create a new user in the custom "users" table
+      const { data: user, error } = await supabase
+        .from('users')
+        .insert([
+          {
+            email,
+            password, // You should hash the password before saving it
+            // Add other user-related columns as needed
+          },
+        ]);
 
       if (error) {
-        console.error('Login error:', error.message);
+        console.error('Sign up error:', error.message);
         return;
       }
 
-      if (data) {
-        // User is logged in, you can perform further actions here
-        console.log('Login successful. User:', data);
-      } else {
-        console.error('Login failed. Invalid email or password.');
-      }
+      console.log('Sign up successful. User:', user);
     } catch (error) {
       console.error('General error:', error);
     }
@@ -35,7 +34,7 @@ const Login = () => {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2>Sign Up</h2>
       <input
         type="email"
         placeholder="Email"
@@ -48,9 +47,9 @@ const Login = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleSignUp}>Sign Up</button>
     </div>
   );
 };
 
-export default Login;
+export default SignUp;
