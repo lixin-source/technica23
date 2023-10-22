@@ -5,8 +5,13 @@ const Welcome = () => {
     return (
         <div>
             <h1>Welcome to Planet Plan!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam nisi eaque sit soluta laborum labore enim dolores facere excepturi.</p>
-            <button><Link to={'/login'}>Login</Link></button>
+            <p>
+                Users will be able to recieve tasks at random and will be able to complete it within 24hrs. 
+                Finish as much as you can to be on the leaderboards!
+                <br/>
+                Sign Up and become a member. Already a member? Login in !
+            </p>
+            {/* <button><Link to={'/login'}>Login</Link></button> */}
         </div>
     );
 };

@@ -1,22 +1,25 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
+import Task from "./Task";
+import tasksData from "../data/Tasks.js"; // Import the default export
 
 function TaskList() {
-    const [fullTasks, setFullTasks] = useState([]);
-    
-useEffect(() => {
-  async function fetchAllTasks() {
-        const { data } = await axios.get("/data/Tasks");
-        setFullTasks(data);
-        }
-  fetchAllTasks();
-}, [id]);
+  const [fullTasks, setFullTasks] = useState([]);
+
+  useEffect(() => {
+    setFullTasks(tasksData);
+  }, []);
+
   return (
     <div className="tasks">
-        {fullTasks.map((task) => (
+      {Array.isArray(fullTasks) ? (
+        fullTasks.map((task) => (
           <Task key={task.id} task={task} />
-        ))}
-      </div>
-  )
+        ))
+      ) : (
+        <p>No tasks available</p>
+      )}
+    </div>
+  );
 }
+
 export default TaskList;

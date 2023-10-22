@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-// import { createClient } from '@supabase/supabase-js';
 import { supabase } from '../client';
-
-// const supabase = createClient(supabaseUrl, supabaseKey);
+import {useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
@@ -25,6 +25,7 @@ const Login = () => {
       if (data) {
         // User is logged in, you can perform further actions here
         console.log('Login successful. User:', data);
+        navigate('/home');
       } else {
         console.error('Login failed. Invalid email or password.');
       }
