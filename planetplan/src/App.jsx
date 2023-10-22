@@ -3,12 +3,14 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import "bootswatch/dist/quartz/bootstrap.min.css";
+import NavBar from './components/NavBar';
 
 function App() {
 
   return (
     // Home page
     <div id='home'>
+      <NavBar />
       {/* Personal todo */}
       <div className="todo-section">
         {/* Fetch from database and show user's tasks that aren't completed */}
