@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Task from "./Task";
-import tasksData from "../data/Tasks"; // Import the default export
+import tasksData from "../data/Tasks.js"; // Import the default export
 
 function TaskList() {
   const [fullTasks, setFullTasks] = useState([]);
