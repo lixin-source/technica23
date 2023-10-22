@@ -1,8 +1,6 @@
-//code credit: Sourabh Bagrecha
 import { useContext } from "react";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { UserContext } from "./User.Context";
-
+import { UserContext } from "../contexts/user.context";
  
 const PrivateRoute = () => {
  
@@ -14,8 +12,7 @@ const PrivateRoute = () => {
  // If the user is not logged in we are redirecting them
  // to the login page. Otherwise we are letting them to
  // continue to the page as per the URL using <Outlet />.
- return (!user ? (<Navigate to={redirectLoginUrl} />) : (<Outlet />));
-
+ return !user ? <Navigate to={redirectLoginUrl} /> : <Outlet /> ;
 }
  
 export default PrivateRoute;

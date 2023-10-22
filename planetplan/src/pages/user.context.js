@@ -1,7 +1,6 @@
-//code credit: Sourabh Bagrecha
 import { createContext, useState } from "react";
 import { App, Credentials } from "realm-web";
-import { APP_ID } from "./Constants";
+import { APP_ID } from "../realm/constants";
  
 // Creating a Realm App Instance
 const app = new App(APP_ID);
@@ -60,7 +59,7 @@ export const UserProvider = ({ children }) => {
    }
  }
  
- return <UserContext value={{ user, setUser, fetchUser, emailPasswordLogin, emailPasswordSignup, logOutUser }}>
+ return <UserContext.Provider value={{ user, setUser, fetchUser, emailPasswordLogin, emailPasswordSignup, logOutUser }}>
    {children}
- </UserContext>;
+ </UserContext.Provider>;
 }

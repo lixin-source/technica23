@@ -1,10 +1,10 @@
 // Pages
 import App from './App.jsx'
 import NavBar from './routes/NavBar';
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import PrivateRoute from "./pages/PrivateRoute";
-import { UserProvider } from "./pages/User.Context";
+import Login from "./pages/Login.page.js";
+import Signup from "./pages/Signup.page.js";
+import PrivateRoute from "./pages/PrivateRoute.page.js";
+import { UserProvider } from "./pages/user.context.js";
 // import UserProfile from './routes/UserProfile'
 
 import './index.css'
