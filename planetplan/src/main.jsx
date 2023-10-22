@@ -1,9 +1,10 @@
 // Pages
 import App from './App.jsx'
-import NavBar from './routes/NavBar';
+import NavBar from './components/NavBar.jsx';
 import Login from "./routes/Login";
 import Signup from "./routes/SignUp";
 import TaskDetails from "./routes/TaskDetails.jsx"
+import InitialHome from './routes/InitialHome.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import UserProfile from './routes/UserProfile'
 
@@ -20,8 +21,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         {/* NavBar */}
-        <Route path="/" element={<NavBar />}/>
-        {/* Home Page */}
+        <Route path="/" element={<InitialHome />}/>
+        {/* Initial Home Page before User Login */}
+        {/* <Route index={true} path="inithome" element={<InitialHome />} /> */}
+        {/* Home pg after login */}
         <Route index={true} path="home" element={<App />} />
         {/* Sign Up Page */}
         <Route exact path="/signup" element={<Signup />} />
