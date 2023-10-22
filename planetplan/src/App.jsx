@@ -1,16 +1,15 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-<<<<<<< Updated upstream
-=======
 import '../node_modules/bootswatch/dist/minty/bootstrap.min.css';
 import NavBar from './components/NavBar';
->>>>>>> Stashed changes
 
 import Task from './components/Task';
 import UserFeed from './components/UserFeed';
 import TopUsers from './components/TopUsers';
+import 'bootswatch/lux/bootstrap.min.css';
+import NavBar from './components/NavBar';
 
 function App() {
 
@@ -85,7 +84,6 @@ function App() {
   }, []);
 
   return (
-<<<<<<< Updated upstream
     <div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -94,7 +92,6 @@ function App() {
       <p className="read-the-docs">
         
       </p>
-=======
     // Home page
     <div id='home'>
       <NavBar />
@@ -109,16 +106,25 @@ function App() {
       {/* Fetch people with highest tasks completed as a whole, "greenest thumb" */}
       <div className="leaderboard">
         <TopUsers topUsers={topUsers} />
+    // Home page
+    <div id='home'>
+      <NavBar />
+      {/* Personal todo */}
+      <div className="todo-section">
+        {/* Fetch from database and show user's tasks that aren't completed */}
+      </div>
+
+      {/* Fetch people with highest tasks completed as a whole, "greenest thumb" */}
+      <div className="leaderboard">
       </div>
 
       {/* fetch from user DB and display everything */}
       <div className="all-users">
         <UserFeed feedData={feedData} />
       </div>  
-
->>>>>>> Stashed changes
+      </div>  
     </div>
   )
 }
 
-export default App
+export default App;
