@@ -3,9 +3,8 @@ import App from './App.jsx'
 import NavBar from './routes/NavBar';
 import Login from "./routes/Login";
 import Signup from "./routes/SignUp";
-import PrivateRoute from "./pages/PrivateRoute.page.jxs";
-import { UserProvider } from "./pages/User.Context.jxs";
 import TaskDetails from "./routes/TaskDetails.jsx"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import UserProfile from './routes/UserProfile'
 
 import './index.css'
@@ -13,13 +12,12 @@ import './index.css'
 // Route installations
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+//import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-    <UserProvider>
       <Routes>
         {/* NavBar */}
         <Route path="/" element={<NavBar />}/>
@@ -31,13 +29,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route exact path="/login" element={<Login />} />
         {/* Task Detail page */}
         <Route index={false} path='/taskDetail/:id' element={<TaskDetails/>}/>
-        <Route element={<PrivateRoute />}>
+        {/* <Route element={<PrivateRoute />}> */}
 
-        </Route>
+        {/* </Route> */}
         {/* User Profile */}
         {/* <Route index={false} element={UserProfile} /> */}
       </Routes>
-      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
