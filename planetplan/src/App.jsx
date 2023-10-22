@@ -92,9 +92,7 @@ const dummyID = 5;
       {/* Personal todo */}
       <div className="todo-section">
         {/* Fetch from database and show user's tasks that aren't completed */}
-         {tasks.map(task=>(
-          <Task key={task.id} task={task} />
-        ))}
+          <Task />
         <UncompletedTasks key={dummyID} id={dummyID} />
       </div>
 
