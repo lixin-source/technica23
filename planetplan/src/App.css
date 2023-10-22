@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+body, html {
+  height: 100%;
+}
+.bg {
+  background-image: url("https://unsplash.com/photos/blue-sky-with-white-clouds-yHWvPxLadRE");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
